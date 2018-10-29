@@ -44,6 +44,9 @@
             <div class="column">
                 <button onclick="play(jeyJey)">Jey Jey</button>
             </div>
+            <div class="column">
+                <button onclick="play(saboroso)">Saboroso</button>
+            </div>
         </div>
     </div>
 
@@ -55,6 +58,7 @@
         var jornalRecord = new Audio('sounds/jornal-record.mpeg');
         var plantaoGlobo = new Audio('sounds/plantao-globo.mpeg');
         var jeyJey = new Audio('sounds/jey-jey.mp3');
+        var saboroso = new Audio('sounds/saboroso.mp3');
         var current;
         function play(sound) {
             if (current) {
