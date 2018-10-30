@@ -47,6 +47,9 @@
             <div class="column">
                 <button onclick="play(saboroso)">Saboroso</button>
             </div>
+            <div class="column">
+                <button onclick="play(toqueDJ)">Toque DJ</button>
+            </div>
         </div>
     </div>
 
@@ -59,6 +62,7 @@
         var plantaoGlobo = new Audio('sounds/plantao-globo.mpeg');
         var jeyJey = new Audio('sounds/jey-jey.mp3');
         var saboroso = new Audio('sounds/saboroso.mp3');
+        var toqueDJ = new Audio('sounds/toque-dj.mp3');
         var current;
         function play(sound) {
             if (current) {
