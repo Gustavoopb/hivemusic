@@ -51,6 +51,11 @@
                 <button onclick="play(toqueDJ)">Toque DJ</button>
             </div>
         </div>
+        <div class="row">
+            <div class="column">
+                <button onclick="play(naoSeReprima)">Não se reprima</button>
+            </div>
+        </div>
     </div>
 
     <script>
@@ -63,6 +68,7 @@
         var jeyJey = new Audio('sounds/jey-jey.mp3');
         var saboroso = new Audio('sounds/saboroso.mp3');
         var toqueDJ = new Audio('sounds/toque-dj.mp3');
+        var naoSeReprima = new Audio('sounds/menudo.mp3');
         var current;
         function play(sound) {
             if (current) {
