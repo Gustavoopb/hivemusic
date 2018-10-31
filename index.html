@@ -55,6 +55,12 @@
             <div class="column">
                 <button onclick="play(naoSeReprima)">Não se reprima</button>
             </div>
+            <div class="column">
+                <button onclick="play(taOsso)">Tá osso, Tá tenso</button>
+            </div>
+            <div class="column">
+                &nbsp;
+            </div>
         </div>
         <div class="row">
             <div class="column column-33">
@@ -80,6 +86,7 @@
         var saboroso = new Audio('sounds/saboroso.mp3');
         var toqueDJ = new Audio('sounds/toque-dj.mp3');
         var naoSeReprima = new Audio('sounds/menudo.mp3');
+        var taOsso = new Audio('sounds/taosso.mp3');
         var current;
         function play(sound) {
             if (current) {
