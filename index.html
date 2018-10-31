@@ -56,6 +56,17 @@
                 <button onclick="play(naoSeReprima)">Não se reprima</button>
             </div>
         </div>
+        <div class="row">
+            <div class="column column-33">
+                &nbsp;
+            </div>
+            <div class="column column-33">
+                <button class="button button-clear" onclick="stop()">stop</button>
+            </div>
+            <div class="column column-33">
+                &nbsp;
+            </div>
+        </div>
     </div>
 
     <script>
@@ -72,11 +83,16 @@
         var current;
         function play(sound) {
             if (current) {
-                current.pause()
+                current.pause();
             }
             current = sound;
             current.load();
             current.play();
+        }
+        function stop() {
+            if (current) {
+                current.pause();
+            }
         }
     </script>
 </body>
