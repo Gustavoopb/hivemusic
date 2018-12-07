@@ -64,8 +64,33 @@
             </div>
         </div>
 		<div class="row">
-            <div class="column column-33">
+            <div class="column">
                 <button onclick="play(ragatanga)">Ragatanga</button>
+            </div>
+            <div class="column">
+                <button onclick="play(ayranman)">Ayran Man</button>
+            </div>
+            <div class="column">
+                <button onclick="play(darthflavio)">Darth Flavius</button>
+            </div>
+        </div>
+		<div class="row">
+            <div class="column">
+                <button onclick="play(gostosao)">Gostosão daqui</button>
+            </div>
+            <div class="column">
+                <button onclick="play(help)">Help!</button>
+            </div>
+            <div class="column">
+                <button onclick="play(gurgui)">João, acabou-se a Farinha</button>
+            </div>
+        </div>
+		<div class="row">
+            <div class="column column-33">
+                <button onclick="play(fear)">Yoda about Dark side</button>
+            </div>
+            <div class="column column-33">
+                <button onclick="play(canabrava)">João Canabrava Vinheta</button>
             </div>
         </div>
 		<button class="ball" onclick="stop()"><div class="icon-stop"></div></button>
@@ -85,6 +110,13 @@
         var taOsso = new Audio('sounds/taosso.mp3');
         var velhoOeste = new Audio('sounds/velho-oeste.mp3');
         var ragatanga = new Audio('sounds/ragatanga.mp3');
+        var ayranman = new Audio('sounds/ayranman_cut.mp3');
+        var darthflavio = new Audio('sounds/darthflavio_cut.mp3');
+        var gostosao = new Audio('sounds/gostosao_cut.mp3');
+        var help = new Audio('sounds/help_cut.mp3');
+        var gurgui = new Audio('sounds/joao_gurgui_cut.mp3');
+        var fear = new Audio('sounds/Fear.mp3');
+        var canabrava = new Audio('sounds/canabrava_cut.mp3');
         var current;
         function play(sound) {
             if (current) {
