@@ -1,0 +1,27 @@
+.column button{
+	width: 100%;
+}
+
+button.ball {
+    background-color: #4CAF50;
+	border: none;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+    color: white;
+    padding: 17px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+	position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.icon-stop{
+	background-color: #fff;
+	width: 15px;
+	height: 15px;
+	padding: 0;
+}

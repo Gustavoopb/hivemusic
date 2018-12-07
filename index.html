@@ -10,7 +10,8 @@
     <script src="main.js"></script> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
     <link rel="stylesheet" href="https://cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+	<link rel="stylesheet" href="main.css">
 </head>
 
 <body>
@@ -59,20 +60,15 @@
                 <button onclick="play(taOsso)">Tá osso, Tá tenso</button>
             </div>
             <div class="column">
-                &nbsp;
+                <button onclick="play(velhoOeste)">Velho Oeste</button>
             </div>
         </div>
-        <div class="row">
+		<div class="row">
             <div class="column column-33">
-                &nbsp;
-            </div>
-            <div class="column column-33">
-                <button class="button button-clear" onclick="stop()">stop</button>
-            </div>
-            <div class="column column-33">
-                &nbsp;
+                <button onclick="play(ragatanga)">Ragatanga</button>
             </div>
         </div>
+		<button class="ball" onclick="stop()"><div class="icon-stop"></div></button>
     </div>
 
     <script>
@@ -87,6 +83,8 @@
         var toqueDJ = new Audio('sounds/toque-dj.mp3');
         var naoSeReprima = new Audio('sounds/menudo.mp3');
         var taOsso = new Audio('sounds/taosso.mp3');
+        var velhoOeste = new Audio('sounds/velho-oeste.mp3');
+        var ragatanga = new Audio('sounds/ragatanga.mp3');
         var current;
         function play(sound) {
             if (current) {
