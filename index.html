@@ -86,11 +86,14 @@
             </div>
         </div>
 		<div class="row">
-            <div class="column column-33">
+            <div class="column">
                 <button onclick="play(fear)">Yoda about Dark side</button>
             </div>
-            <div class="column column-33">
+            <div class="column">
                 <button onclick="play(canabrava)">João Canabrava Vinheta</button>
+            </div>
+            <div class="column">
+                <button onclick="play(meulindo)">Meu lindo vem cá</button>
             </div>
         </div>
 		<button class="ball" onclick="stop()"><div class="icon-stop"></div></button>
@@ -117,6 +120,7 @@
         var gurgui = new Audio('sounds/joao_gurgui_cut.mp3');
         var fear = new Audio('sounds/Fear.mp3');
         var canabrava = new Audio('sounds/canabrava_cut.mp3');
+        var meulindo = new Audio('sounds/meulindo_cut.mp3');
         var current;
         function play(sound) {
             if (current) {
